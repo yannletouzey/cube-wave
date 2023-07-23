@@ -1,14 +1,20 @@
 {
-  "name": "parcel-template",
+  "name": "wave-cube",
   "version": "1.0.0",
-  "description": "",
+  "description": "Wave with cube - css and js",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "clear": "rm -rf dist && rm -rf .parcel-cache"
+    "clear": "rm -rf dist && rm -rf .parcel-cache",
+    "deploy": "vercel --prod"
   },
-  "keywords": [],
+  "keywords": [
+    "wave",
+    "3d",
+    "cube",
+    "3d css"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
