@@ -5,7 +5,7 @@ for (let r = 0; r < 25; r++) {
     const row = document.createElement('div')
     row.classList.add('row')
     row.style.animationDelay = 0.3 * r + "s"
-    row.classList.add('wave-row')
+    row.classList.add('wave-rowX')
     main.append(row)
 }
 
@@ -14,6 +14,8 @@ rows.forEach(row => {
     for (let index = 0; index < 15; index++) {
         const cube = document.createElement('div')
         cube.classList.add('cube')
+        cube.style.animationDelay = 0.3 * index + "s"
+        cube.classList.add('wave-cubeY')
         row.append(cube)
     }
 })

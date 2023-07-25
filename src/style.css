@@ -40,16 +40,26 @@ main{
 .row{
     transform-style: preserve-3d;
 }
-.wave-row{
-    animation: wave 5s ease-in-out infinite;
+.wave-rowX{
+    animation: waveX 5s ease-in-out infinite;
 }
-@keyframes wave {
+@keyframes waveX {
     0%, 100% {
         transform: translateZ(0);
     }
     50%{
         transform: translateZ(8rem);
-
+    }
+}
+.wave-cubeY{
+    animation: waveY 5s ease-in-out infinite;
+}
+@keyframes waveY {
+    0%, 100% {
+        transform: translateZ(0);
+    }
+    50%{
+        transform: translateZ(5rem);
     }
 }
 .cube{
