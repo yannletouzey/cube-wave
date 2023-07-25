@@ -1,1 +1,1 @@
-# template Parcel
+# CUBE-CSS-ANIMATION-WAVE
