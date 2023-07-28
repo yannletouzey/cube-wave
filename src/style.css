@@ -1,14 +1,14 @@
 :root{
-    --size-cube: 6rem;
+    --size-cube: 5rem;
 }
 @media screen and (min-width: 65rem){
     :root{
-        --size-cube: 8rem;
+        --size-cube: 6rem;
     }
 }
 @media screen and (min-width: 80rem){
     :root{
-        --size-cube: 10rem;
+        --size-cube: 7rem;
     }
 }
 *{
@@ -48,7 +48,7 @@ main{
         transform: translateZ(0);
     }
     50%{
-        transform: translateZ(8rem);
+        transform: translateZ(6rem);
     }
 }
 .wave-cubeY{
@@ -59,7 +59,7 @@ main{
         transform: translateZ(0);
     }
     50%{
-        transform: translateZ(5rem);
+        transform: translateZ(6rem);
     }
 }
 .cube{
@@ -68,32 +68,34 @@ main{
     transform-style: preserve-3d;
     width: var(--size-cube);
     height: var(--size-cube);
-    margin: 0.5rem 0rem;
+    margin: 0.2rem 0rem;
 }
 .face{
     position: absolute;
     width: var(--size-cube);
     height: var(--size-cube);
     background-color: #81B4FF;
-    opacity: 0.8;
-    border: 1px solid #000000c0;
-    box-shadow: inset 0px 0px 60px -2px #000000;
+    border: 1px solid #000000;
+    box-shadow: inset 0px 0px 60px -2px #000;
 }
 .face__top{
     transform: translateZ(calc(var(--size-cube) / 2));
 }
 .face__bottom{
-    transform: translateZ(- calc(var(--size-cube) / 2));
+    transform: rotateX(180deg) translateZ(calc(var(--size-cube) / 2));
 }
 .face__front{
-    transform: translateY(calc(var(--size-cube) / 2)) rotateX(90deg);
+    transform: translateY(calc(var(--size-cube) / 2)) rotateX(-90deg);
+    background: linear-gradient(0deg, rgba(15,5,180,1) 67%, rgba(83,108,224,0.9234287464985994) 87%, rgba(129,180,255,0.9962578781512605) 100%);
 }
 .face__back{
-    transform: translateY(- calc(var(--size-cube) / 2)) rotateX(-90deg);
+    transform: rotateX(90deg) translateZ(calc(var(--size-cube) / 2)) ;
 }
 .face__left{
-    transform: translateX(- calc(var(--size-cube) / 2)) rotateY(90deg);
+    transform: rotateY(-90deg) translateZ(calc(var(--size-cube) / 2)) rotateZ(90deg);
+    background: linear-gradient(0deg, rgba(15,5,180,1) 67%, rgba(83,108,224,0.9234287464985994) 87%, rgba(129,180,255,0.9962578781512605) 100%);
 }
 .face__right{
-    transform: translateX(calc(var(--size-cube) / 2)) rotateY(90deg);
+    transform: translateX(calc(var(--size-cube) / 2)) rotateY(90deg) rotateZ(-90deg);
+    background: linear-gradient(0deg, rgba(15,5,180,1) 67%, rgba(83,108,224,0.9234287464985994) 87%, rgba(129,180,255,0.9962578781512605) 100%);
 }

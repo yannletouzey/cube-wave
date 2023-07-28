@@ -1,10 +1,10 @@
-const form = ["front","back","right","left","top","bottom"]
+const form = ["front","right","left","top"]
 const main = document.querySelector('main')
 
 for (let r = 0; r < 25; r++) {
     const row = document.createElement('div')
     row.classList.add('row')
-    row.style.animationDelay = 0.3 * r + "s"
+    row.style.animationDelay = 0.2 * r + "s"
     row.classList.add('wave-rowX')
     main.append(row)
 }
