@@ -6,9 +6,9 @@
         --size-cube: 6rem;
     }
 }
-@media screen and (min-width: 80rem){
+@media screen and (min-width: 100rem){
     :root{
-        --size-cube: 7rem;
+        --size-cube: 8rem;
     }
 }
 *{
@@ -35,7 +35,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotateX(40deg) rotateZ(10deg) rotateY(-10deg) translateX(-25rem) translateY(-10rem);
+    transform-origin: center;
+    transform: rotateX(40deg);
 }
 .row{
     transform-style: preserve-3d;
