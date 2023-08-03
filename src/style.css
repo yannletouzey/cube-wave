@@ -35,7 +35,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotateX(40deg) rotateZ(10deg) rotateY(-10deg);
+    transform: rotateX(40deg) rotateZ(10deg) rotateY(-10deg) translateX(-25rem) translateY(-10rem);
 }
 .row{
     transform-style: preserve-3d;
