@@ -1,14 +1,14 @@
 :root{
-    --size-cube: 5rem;
+    --size-cube: 2rem;
 }
 @media screen and (min-width: 65rem){
     :root{
-        --size-cube: 6rem;
+        --size-cube: 3rem;
     }
 }
 @media screen and (min-width: 100rem){
     :root{
-        --size-cube: 8rem;
+        --size-cube: 4rem;
     }
 }
 *{
@@ -36,7 +36,7 @@ main{
     align-items: center;
     justify-content: center;
     transform-origin: center;
-    transform: rotateX(40deg);
+    transform: rotateX(40deg) translateZ(-10rem);
 }
 .row{
     transform-style: preserve-3d;
@@ -49,7 +49,7 @@ main{
         transform: translateZ(0);
     }
     50%{
-        transform: translateZ(6rem);
+        transform: translateZ(calc(var(--size-cube) * 2));
     }
 }
 .wave-cubeY{
@@ -60,7 +60,7 @@ main{
         transform: translateZ(0);
     }
     50%{
-        transform: translateZ(6rem);
+        transform: translateZ(calc(var(--size-cube) * 2));
     }
 }
 .cube{

@@ -1,7 +1,7 @@
 const form = ["front","right","left","top"]
 const main = document.querySelector('main')
 
-for (let r = 0; r < 25; r++) {
+for (let r = 0; r < 20; r++) {
     const row = document.createElement('div')
     row.classList.add('row')
     row.style.animationDelay = 0.2 * r + "s"
@@ -11,7 +11,7 @@ for (let r = 0; r < 25; r++) {
 
 const rows = document.querySelectorAll('.row')
 rows.forEach(row => {
-    for (let index = 0; index < 15; index++) {
+    for (let index = 0; index < 20; index++) {
         const cube = document.createElement('div')
         cube.classList.add('cube')
         cube.style.animationDelay = 0.2 * index + "s"
