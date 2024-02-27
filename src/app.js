@@ -1,21 +1,22 @@
 const form = ["front","right","left","top"]
 const main = document.querySelector('main')
+const nbrCube = 15
 
-for (let r = 0; r < 20; r++) {
+for (let r = 0; r < nbrCube; r++) {
     const row = document.createElement('div')
     row.classList.add('row')
     row.style.animationDelay = 0.2 * r + "s"
-    row.classList.add('wave-rowX')
+    row.classList.add('wave')
     main.append(row)
 }
 
 const rows = document.querySelectorAll('.row')
 rows.forEach(row => {
-    for (let index = 0; index < 20; index++) {
+    for (let index = 0; index < nbrCube; index++) {
         const cube = document.createElement('div')
         cube.classList.add('cube')
         cube.style.animationDelay = 0.2 * index + "s"
-        cube.classList.add('wave-cubeY')
+        cube.classList.add('wave')
         row.append(cube)
     }
 })
