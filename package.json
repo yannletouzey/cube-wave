@@ -1,13 +1,14 @@
 {
-  "name": "wave-cube",
-  "version": "1.0.0",
-  "description": "Wave with cube - css and js",
-  "source": "src/index.html",
+  "name": "cube-wave",
+  "version": "0.0.1",
+  "type": "module",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html",
-    "clear": "rm -rf dist && rm -rf .parcel-cache",
-    "deploy": "vercel --prod"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
   },
   "keywords": [
     "wave",
@@ -16,12 +17,5 @@
     "3d css"
   ],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.8.3",
-    "parcel": "^2.8.3"
-  },
-  "dependencies": {
-    "vercel": "^31.1.0"
-  }
+  "license": "ISC"
 }
