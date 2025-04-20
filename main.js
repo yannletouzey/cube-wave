@@ -1,4 +1,4 @@
-const form = ["front","right","left","top"]
+const form = ["front","right","top"]
 const main = document.querySelector('main')
 const nbrCube = 20
 

@@ -36,7 +36,7 @@ main{
   align-items: center;
   justify-content: center;
   transform-origin: center;
-  transform: rotateX(70deg) translateZ(-10rem) translateY(-10rem);
+  transform: rotateY(-20deg) rotateX(70deg) translateZ(-10rem) translateY(-10rem);
 }
 .row{
   transform-style: preserve-3d;
@@ -76,17 +76,8 @@ main{
 .face__top{
   transform: translateZ(calc(var(--size-cube) / 2));
 }
-.face__bottom{
-  transform: rotateX(180deg) translateZ(calc(var(--size-cube) / 2));
-}
 .face__front{
   transform: translateY(calc(var(--size-cube) / 2)) rotateX(-90deg);
-}
-.face__back{
-  transform: rotateX(90deg) translateZ(calc(var(--size-cube) / 2)) ;
-}
-.face__left{
-  transform: rotateY(-90deg) translateZ(calc(var(--size-cube) / 2)) rotateZ(90deg);
 }
 .face__right{
   transform: translateX(calc(var(--size-cube) / 2)) rotateY(90deg) rotateZ(-90deg);
